@@ -1,0 +1,81 @@
+/* 1 - esetando estilos  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* 2 - fundo da página */
+body {
+    background: linear-gradient(135deg, #6a0dad, #9370db, #dda0dd);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 3 - container principal */
+.login-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+/* 4 - título */
+.login-container h1 {
+    color: #6a0dad; /* Roxo forte */
+    margin-bottom: 20px;
+}
+
+/* 5 - campos de input */
+.input-field {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-field label {
+    display: block;
+    margin-bottom: 5px;
+    color: #6a0dad;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #dda0dd; /* Lilás */
+    border-radius: 8px;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+/* 6 - interação ao focar nos inputs */
+.input-field input:focus {
+    border-color: #9370db; /* Violeta */
+    background-color: #f0f0f5;
+}
+
+/* 7 - botão de login */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #6a0dad; /* Roxo */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* 8 - efeito hover no botão de login */
+button:hover {
+    background-color: #9370db; /* Violeta mais claro */
+}
+
+/* 9 - efeito de foco no botão */
+button:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(106, 13, 173, 0.5);
+}
